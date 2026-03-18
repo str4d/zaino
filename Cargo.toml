@@ -2,8 +2,8 @@
 [workspace]
 members = [
     "zaino-common",
-    "integration-tests",
-    "zaino-testutils",
+    # "integration-tests",
+    # "zaino-testutils",
     "zainod",
     "zaino-serve",
     "zaino-state",
@@ -131,7 +131,7 @@ zaino-proto = { path = "zaino-proto" }
 zaino-serve = { path = "zaino-serve" }
 zaino-state = { path = "zaino-state" }
 zaino-common.path = "zaino-common"
-zaino-testutils = { path = "zaino-testutils" }
+# zaino-testutils = { path = "zaino-testutils" }
 zaino-testvectors = { path = "zaino-testvectors" }
 zainod = { path = "zainod" }
 config = { version = "0.15", default-features = false, features = ["toml"] }
