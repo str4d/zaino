@@ -38,6 +38,7 @@ zingo_test_vectors = { git = "https://github.com/zingolabs/infrastructure.git", 
 zcash_local_net = { git = "https://github.com/zingolabs/infrastructure.git", rev = "a303cad" }
 
 # Librustzcash
+sapling-crypto = "0.6"
 zcash_address = "0.10"
 zcash_keys = "0.12"
 zcash_protocol = "0.7.2"
@@ -142,13 +143,19 @@ derive_more = "2.0.1"
 lazy_static = "1.5.0"
 
 [patch.crates-io]
-#zcash_client_backend = { git = "https://github.com/zcash/librustzcash", tag = "zcash_client_backend-0.21.0"}
-#zcash_address = { git = "https://github.com/zcash/librustzcash", tag = "zcash_client_backend-0.21.0"}
-#zcash_keys = { git = "https://github.com/zcash/librustzcash", tag = "zcash_client_backend-0.21.0"}
-#zcash_primitives = { git = "https://github.com/zcash/librustzcash", tag = "zcash_client_backend-0.21.0"}
-#zcash_protocol = { git = "https://github.com/zcash/librustzcash", tag = "zcash_client_backend-0.21.0"}
-#zcash_transparent = { git = "https://github.com/zcash/librustzcash", tag = "zcash_client_backend-0.21.0"}
+equihash = { git = "https://github.com/zcash/librustzcash.git", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90" }
+zcash_address = { git = "https://github.com/zcash/librustzcash", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90"}
+zcash_encoding = { git = "https://github.com/zcash/librustzcash.git", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90" }
+zcash_history = { git = "https://github.com/zcash/librustzcash.git", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90" }
+zcash_keys = { git = "https://github.com/zcash/librustzcash", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90"}
+zcash_primitives = { git = "https://github.com/zcash/librustzcash", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90"}
+zcash_proofs = { git = "https://github.com/zcash/librustzcash", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90"}
+zcash_protocol = { git = "https://github.com/zcash/librustzcash", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90"}
+zcash_transparent = { git = "https://github.com/zcash/librustzcash", rev = "f9682149a4aadab9edb1ba642fcb6ca3524fce90"}
 
+zebra-chain = { git = "https://github.com/str4d/zebra.git", rev = "9033e949dd7f8ad7232aa624fd5d64357805545d" }
+zebra-rpc = { git = "https://github.com/str4d/zebra.git", rev = "9033e949dd7f8ad7232aa624fd5d64357805545d" }
+zebra-state = { git = "https://github.com/str4d/zebra.git", rev = "9033e949dd7f8ad7232aa624fd5d64357805545d" }
 
 [profile.test]
 opt-level = 3
